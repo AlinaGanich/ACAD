@@ -37,3 +37,81 @@
         text-transform: uppercase;
         color: $section-title-ft-color;
     }
+    
+    .title-icon-inline {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+    }
+    
+    .icon-bg {
+        margin-right: 1rem;
+        padding: 10px 12px;
+        background: $btn-color;
+        color: #fff;
+    }
+    
+    // .slider {
+    //     display: flex;
+    //     flex-direction: row;
+    //     justify-content: space-around;
+    // }
+    // .slide-item {
+    //     margin: 0 auto;
+    // }
+    // .team-img {
+    //     display: block;
+    // }
+    .slick-arrow {
+        display: block;
+        font-size: 0;
+        color: transparent;
+        border: 0;
+        background: none;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+        transform: translateY(-50%);
+    }
+    
+    .slick-arrow:after {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-top: 2px solid #544f5f;
+        border-right: 2px solid #544f5f;
+    }
+    
+    .slick-prev {
+        left: 0;
+        transform: rotate(-135deg);
+    }
+    
+    .slick-next {
+        right: 0;
+        transform: rotate(45deg);
+    }
+    
+    .header {
+        width: 100%;
+        margin: 0 auto;
+        /* position: relative; */
+    }
+    
+    .header.fixed {
+        background-color: #37302b;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+        transform: translate3d(0, 0, 0);
+        padding: 10px 20px;
+        box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .header.active {
+        background-color: #37302b;
+    }

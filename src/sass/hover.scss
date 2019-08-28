@@ -26,21 +26,21 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease;
+    transition: transform calc(var(--photoboxAnimationDuration, 1s) / 2) ease;
     will-change: transform;
     transform: translate(-50%, -50%) scale(0);
 }
 
 .photobox_type6:hover .photobox__previewbox:before {
     transform: translate(-50%, -50%) scale(4);
-    transition-duration: var(--photoboxAnimationDuration, .8s);
+    transition-duration: var(--photoboxAnimationDuration, 1s);
 }
 
 .photobox_type6 .photobox__label {
     width: 95%;
     text-align: center;
     transform: translate(-200%, -50%);
-    transition: transform calc(var(--photoboxAnimationDuration, .8s) / 2) ease-out;
+    transition: transform calc(var(--photoboxAnimationDuration, 1s) / 2) ease-out;
     will-change: transform;
     position: absolute;
     top: 50%;
@@ -48,7 +48,7 @@
 }
 
 .photobox_type6:hover .photobox__label {
-    transition-duration: calc(var(--photoboxAnimationDuration, .8s) / 4);
+    transition-duration: calc(var(--photoboxAnimationDuration, 1s) / 4);
     transform: translate(-50%, -50%);
 }
 
